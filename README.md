@@ -1,0 +1,1 @@
+for main.py to work you gotta add a txt file called resp so it stores all the stuff
