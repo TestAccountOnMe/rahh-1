@@ -10,7 +10,9 @@ def index():
 @app.route('/submit', methods=["POST"])
 def sub():
   aa = request.form.get("idk")
-  print(aa)
+  with open('resp.txt', 'a') as f:
+    f.write(aa + '\n')
+  return "Done"
 
 
 
