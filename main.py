@@ -14,7 +14,11 @@ def sub():
     f.write(aa + '\n')
   return "Done, you can submit more now."
 
-
+@app.route('/subs')
+def subs():
+  with open('resp.txt', 'r') as f:
+    a = f.readlines()
+    return a
 
 
 app.run(host='0.0.0.0', port=81)
