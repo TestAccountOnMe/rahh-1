@@ -12,7 +12,7 @@ def sub():
   aa = request.form.get("idk")
   with open('resp.txt', 'a') as f:
     f.write(aa + '\n')
-  return "Done"
+  return "Done, you can submit more now."
 
 
 
